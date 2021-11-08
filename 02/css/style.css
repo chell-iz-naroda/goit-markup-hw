@@ -217,6 +217,7 @@ color: var(--second-title-color);
 background: #F5F4FA;
 border-radius: 4px;
 border: none;
+cursor:pointer;
 }
 
 .portfolio-hero-btn:hover,
