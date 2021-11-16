@@ -21,24 +21,24 @@
     <!--header-->
     <header class="header">
       <!--navigation-->
-      <nav class="header-navigation">
+      <div class="container header-conteiner">
         <a href="" class="logo link">
           <span class="logo-accent">Web</span>Studio</a
         >
+      <nav class="header-navigation">
         <ul class="header-list list">
           <li class="header-item">
             <a href="./index.html" class="header-link link">Студия</a>
           </li>
           <li class="header-item">
-            <a href="./portfolio.html" class="header-link link current"
-              >Портфолио</a
-            >
+            <a href="./portfolio.html" class="header-link link current">Портфолио</a>
           </li>
           <li class="header-item">
             <a href="" class="header-link link">Контакты</a>
           </li>
         </ul>
       </nav>
+
       <ul class="header-list-right list">
         <li class="header-item-right">
           <a href="mailto:info@devstudio.com" class="mail link"
@@ -49,34 +49,36 @@
           <a href="tel:+380961111111" class="tel link">+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
     </header>
     <main>
       <section class="portfolio-hero">
-        <nav class="portfolio-hero-navigation">
-          <ul class="portfolio-list list">
-            <li class="portfolio-hero-item">
-              <button type="button" class="portfolio-hero-btn">Все</button>
+        <div class="container portfolio-hero-container">
+        <div class="portfolio-hero-navigation">
+          <ul class="portfolio-navigation-list list">
+            <li class="portfolio-hero-navigation-item ">
+              <button type="button" class="portfolio-hero-btn current">Все</button>
             </li>
-            <li class="portfolio-hero-item">
+            <li class="portfolio-hero-navigation-item">
               <button type="button" class="portfolio-hero-btn">
                 Веб-сайты
               </button>
             </li>
-            <li class="portfolio-hero-item">
+            <li class="portfolio-hero-navigation-item">
               <button type="button" class="portfolio-hero-btn">
                 Приложения
               </button>
             </li>
-            <li class="portfolio-hero-item">
+            <li class="portfolio-hero-navigation-item">
               <button type="button" class="portfolio-hero-btn">Дизайн</button>
             </li>
-            <li class="portfolio-hero-item">
+            <li class="portfolio-hero-navigation-item">
               <button type="button" class="portfolio-hero-btn">
                 Маркетинг
               </button>
             </li>
           </ul>
-        </nav>
+        </div>
         <ul class="portfolio-list list">
           <li class="portfolio-hero-item">
             <img
@@ -85,8 +87,10 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-hero-item-container">
             <h3 class="portfolio-hero-title">Технокряк</h3>
             <p class="portfolio-hero-text">Веб-сайт</p>
+          </div>
           </li>
           <li class="portfolio-hero-item">
             <img
@@ -95,10 +99,12 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-hero-item-container">
             <h3 class="portfolio-hero-title">
               Постер <span lang="en">New Orlean vs Golden Star</span>
             </h3>
             <p class="portfolio-hero-text">Дизайн</p>
+          </div>
           </li>
           <li class="portfolio-hero-item">
             <img
@@ -107,10 +113,12 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-hero-item-container">
             <h3 class="portfolio-hero-title">
               Ресторан <span lang="en">Seafood</span>
             </h3>
             <p class="portfolio-hero-text">Приложение</p>
+          </div>
           </li>
           <li class="portfolio-hero-item">
             <img
@@ -119,10 +127,12 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-hero-item-container">
             <h3 class="portfolio-hero-title">
               Проект <span lang="en">Prime</span>
             </h3>
             <p class="portfolio-hero-text">Маркетинг</p>
+          </div>
           </li>
           <li class="portfolio-hero-item">
             <img
@@ -131,6 +141,7 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-hero-item-container">
             <h3 class="portfolio-hero-title">
               Проект <span lang="en">Boxes</span>
             </h3>
@@ -143,10 +154,12 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-hero-item-container">
             <h3 class="portfolio-hero-title" lang="en">
               Inspiration has no Borders
             </h3>
             <p class="portfolio-hero-text">Веб-сайт</p>
+          </div>
           </li>
           <li class="portfolio-hero-item">
             <img
@@ -155,10 +168,12 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-hero-item-container">
             <h3 class="portfolio-hero-title">
               Издание <span lang="en">Limited Edition</span>
             </h3>
             <p class="portfolio-hero-text">Дизайн</p>
+          </div>
           </li>
           <li class="portfolio-hero-item">
             <img
@@ -167,10 +182,12 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-hero-item-container">
             <h3 class="portfolio-hero-title">
               Проект <span lang="en">LAB</span>
             </h3>
             <p class="portfolio-hero-text">Маркетинг</p>
+          </div>
           </li>
           <li class="portfolio-hero-item">
             <img
@@ -179,14 +196,18 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-hero-item-container">
             <h3 class="portfolio-hero-title" lang="en">Growing Business</h3>
             <p class="portfolio-hero-text">Приложение</p>
+          </div>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!--footer-->
     <footer class="footer">
+      <div class="container footer-container">
       <a href="" class="footer-logo link"
         ><span class="logo-accent">Web</span>Studio</a
       >
@@ -203,7 +224,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
-    <div class="container"></div>
   </body>
 </html>
