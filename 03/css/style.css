@@ -400,12 +400,13 @@ body {
   margin-bottom: 30px;
 
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 
 .portfolio-hero-item-container{
   padding: 24px 20px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+
 }
 
 .portfolio-hero-btn {
