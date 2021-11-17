@@ -70,9 +70,6 @@ body {
 
 /*-----------------------------HEADER----------------------------*/
 .header {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -104,12 +101,15 @@ body {
 }
 
 .logo {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2; /*31px*/
   letter-spacing: 0.03em;
   color: var(--logo-second-color);
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo-accent {
   color: var(--logo-first-color);
@@ -122,6 +122,9 @@ body {
   line-height: 1.14; /*16px*/
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link.current {
   color: var(--accent-color);
@@ -139,6 +142,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .tel {
   font-family: inherit;
@@ -148,6 +154,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .mail:hover,
 .tel:hover,
@@ -161,20 +170,19 @@ body {
 .hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 235px;
 }
-
 .hero {
   background: #2f303a;
 }
 .hero-title {
-  width: 700px;
+  width: 694px;
   height: 120px;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36; /*60px*/
   text-align: center;
+  margin: 0 auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
@@ -199,13 +207,15 @@ body {
   min-width: 200px;
   min-height: 50px;
 
-  margin-left: 250px;
+  display: block;
+  margin: auto;
 }
 
 /*-----------------------------PECULIARRITIES----------------------------*/
 
 .peculiarities-container {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .peculiarities-list {
@@ -240,7 +250,6 @@ body {
 
 /*-----------------------------DOING----------------------------*/
 .doing-container {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -251,8 +260,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 
+  text-align: center;
   margin-bottom: 50px;
-  padding-left: 400px;
 }
 
 .doing-list {
@@ -270,7 +279,7 @@ body {
 
 /*-----------------------------TEAM----------------------------*/
 .team-container {
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -307,7 +316,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 
-  padding-left: 456px;
+  text-align: center;
   margin-bottom: 50px;
 }
 .team-item-title {
@@ -333,10 +342,6 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-address {
-  margin-top: 20px;
-}
-
 .footer-item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -345,7 +350,7 @@ body {
   background: #2f303a;
 }
 .footer-logo {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -353,6 +358,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
+
+.footer-logo-container {
+  margin-bottom: 20px;
+}
+
 .footer-text {
   font-style: normal;
   font-size: 14px;
@@ -361,6 +371,33 @@ body {
   color: var(--third-text-color);
 
   margin-bottom: 10px;
+}
+
+.footer-mail {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.footer-tel {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.footer-mail:hover,
+.footer-tel:hover,
+.footer-mail:focus,
+.footer-tel:focus {
+  color: var(--accent-color);
 }
 
 /*-----------------------------PORTFOLIO----------------------------*/
@@ -374,13 +411,10 @@ body {
   padding-bottom: 94px;
 }
 
-.portfolio-hero-navigation {
-  padding-left: 280px;
-  margin-bottom: 34px;
-}
-
 .portfolio-navigation-list {
   display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 
 .portfolio-hero-navigation-item {
@@ -402,13 +436,12 @@ body {
   background: #ffffff;
 }
 
-.portfolio-hero-item-container{
+.portfolio-hero-item-container {
   padding: 24px 20px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   box-sizing: border-box;
-
 }
 
 .portfolio-hero-btn {
@@ -448,7 +481,6 @@ body {
   line-height: 2; /*36px*/
   letter-spacing: 0.06em;
   color: var(--second-title-color);
-
 
   margin-bottom: 4px;
 }
