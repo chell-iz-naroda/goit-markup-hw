@@ -8,6 +8,9 @@
   --third-text-color: #ffffff;
   --fourth-text-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
+  --main-bg-icon: #afb1b8;
+  --second-bg-icon: #ffffff;
+  --footer-bg-icon: rgba(255, 255, 255, 0.1);
 }
 
 p,
@@ -145,6 +148,10 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tel {
   font-family: inherit;
@@ -157,7 +164,22 @@ body {
 
   padding-top: 32px;
   padding-bottom: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.tel-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .mail:hover,
 .tel:hover,
 .mail:focus,
@@ -181,8 +203,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
-  
+
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -229,12 +250,34 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.peculiarities-list-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.peculiarities-list-card-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .peculiarities-list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
+  margin-top: 30px;
 }
 
 .peculiarities-item {
@@ -300,6 +343,45 @@ body {
   padding-top: 30px;
 }
 
+.team-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+.team-social-item {
+  width: 44px;
+  height: 44px;
+
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  color: var(--main-bg-icon);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--second-bg-icon);
+}
+
+.team-social-icon {
+  fill: currentColor;
+}
+
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -348,10 +430,60 @@ body {
   color: var(--second-text-color);
 }
 
+/*-----------------------------CLIENTS----------------------------*/
+.clients-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16; /*42px*/
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.clients-list-item {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--main-bg-icon);
+}
+
+.clients-list-icon {
+  fill: currentColor;
+}
+
 /*-----------------------------FOOTER----------------------------*/
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container-position {
+  display: flex;
 }
 
 .footer-item:not(:last-child) {
@@ -359,8 +491,13 @@ body {
 }
 
 .footer {
-  background: #2f303a;
+  background-color: #2f303a;
 }
+
+.footer-main {
+  margin-right: 70px;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -412,6 +549,60 @@ body {
   color: var(--accent-color);
 }
 
+/*---------------------------FOOTER----SOCIAL--------------------------------------*/
+
+.footer-social {
+  padding-top: 12px;
+}
+
+.footer-social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+
+  flex-basis: calc(100% / 4 - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footer-bg-icon);
+  color: var(--second-bg-icon);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
 /*-----------------------------PORTFOLIO----------------------------*/
 /*-----------------------------PORTFOLIO----------------------------*/
 /*-----------------------------PORTFOLIO----------------------------*/
@@ -446,6 +637,11 @@ body {
   margin-bottom: 30px;
 
   background: #ffffff;
+}
+
+.portfolio-hero-item:hover,
+.portfolio-hero-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-hero-item-container {
