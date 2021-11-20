@@ -99,7 +99,7 @@ body {
   margin-left: auto;
 }
 
-.header-item-right > .mail {
+.header-item-right:not(:last-child) {
   margin-right: 52px;
 }
 
@@ -461,6 +461,11 @@ body {
 
   width: 170px;
   height: 92px;
+}
+
+.clients-list-link {
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -472,9 +477,8 @@ body {
   color: var(--main-bg-icon);
 }
 
-
-.clients-list-item:hover,
-.clients-list-item:focus{
+.clients-list-link:hover,
+.clients-list-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -647,8 +651,9 @@ body {
 }
 
 .portfolio-hero-item:hover,
-.portfolio-hero-item:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-hero-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-hero-item-container {
