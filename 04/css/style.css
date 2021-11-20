@@ -472,6 +472,13 @@ body {
   color: var(--main-bg-icon);
 }
 
+
+.clients-list-item:hover,
+.clients-list-item:focus{
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
 .clients-list-icon {
   fill: currentColor;
 }
