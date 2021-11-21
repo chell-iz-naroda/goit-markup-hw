@@ -14,3 +14,35 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.icon-smartphone {
+  width: 0.625em;
+}
+
+.icon-tag-line {
+  width: 1.7666015625em;
+}
+
+.icon-brand {
+  width: 1.7666015625em;
+}
+
+.icon-foster-petters {
+  width: 1.7666015625em;
+}
+
+.icon-company {
+  width: 1.7666015625em;
+}
+
+.icon-tag-line-here {
+  width: 1.7666015625em;
+}
+
+.icon-yaco {
+  width: 1.7666015625em;
+}
+
+.icon-envelope {
+  width: 1.3330078125em;
+}
