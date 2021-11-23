@@ -259,9 +259,7 @@ body {
 }
 
 .peculiarities-list-card-item {
-  flex-basis: calc(100% / 4 - 30px);
   margin-bottom: 30px;
-
   width: 270px;
   height: 120px;
   background: #f5f4fa;
