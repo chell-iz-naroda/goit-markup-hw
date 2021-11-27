@@ -13,6 +13,7 @@
   --footer-bg-icon: rgba(255, 255, 255, 0.1);
   --transition-effect: cubic-bezier(0.4, 0, 0.2, 1);
   --backdrop-bg: rgba(0, 0, 0, 0.2);
+  --doing-text-bg: rgba(47, 48, 58, 0.8);
 }
 
 p,
@@ -352,6 +353,33 @@ body {
   margin-right: -30px;
   margin-bottom: -30px;
 }
+
+.doing-wrap{
+  position: relative;
+}
+
+.doing-text{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: var(--doing-text-bg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;/*16px*/
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--third-text-color);
+}
+
 
 .doing-item {
   flex-basis: calc(100% / 3 - 30px);
