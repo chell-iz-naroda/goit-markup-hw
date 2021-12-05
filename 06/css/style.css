@@ -354,11 +354,11 @@ body {
   margin-bottom: -30px;
 }
 
-.doing-wrap{
+.doing-wrap {
   position: relative;
 }
 
-.doing-text{
+.doing-text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -372,14 +372,13 @@ body {
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;/*16px*/
+  line-height: 1.14; /*16px*/
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--third-text-color);
 }
-
 
 .doing-item {
   flex-basis: calc(100% / 3 - 30px);
@@ -622,7 +621,7 @@ body {
 
 /*---------------------------FOOTER----SOCIAL--------------------------------------*/
 
-.footer-social{
+.footer-social {
   margin-right: 93px;
 }
 
@@ -672,7 +671,6 @@ body {
   fill: currentColor;
 }
 
-
 /*--------------------------FOOTER-SUBMIT----------------------*/
 
 .footer-submit-title {
@@ -685,11 +683,11 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-submit-wrap{
+.footer-submit-wrap {
   display: flex;
 }
 
-.footer-submit-input{
+.footer-submit-input {
   width: 358px;
   height: 50px;
 
@@ -710,18 +708,18 @@ body {
 }
 
 .footer-submit-input:hover,
-.footer-submit-input:focus{
+.footer-submit-input:focus {
   border-color: var(--accent-color);
 }
 
-.footer-submit-input::placeholder{
+.footer-submit-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-submit-btn{
+.footer-submit-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -743,10 +741,9 @@ body {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
-
 }
 
-.footer-submit-icon{
+.footer-submit-icon {
   margin-left: 10px;
   fill: currentColor;
 }
@@ -932,30 +929,27 @@ body {
   transition: color 250ms var(--transition-effect);
 }
 
-.modal-close:hover{
+.modal-close:hover {
   color: var(--accent-color);
 }
 
-.close-icon{
+.close-icon {
   fill: currentColor;
 }
 
-.modal-form-field{
+.modal-form-field {
   margin-bottom: 10px;
 }
 
-
-
-.modal-form-field:nth-child(4){
+.modal-form-field:nth-child(4) {
   margin-bottom: 25px;
 }
 
-.modal-form-field:nth-child(5){
+.modal-form-field:nth-child(5) {
   margin-bottom: 30px;
 }
 
-
-.modal-input-text{
+.modal-input-text {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -969,23 +963,23 @@ body {
   position: relative;
 }
 
-.modal-input{
-    width: 100%;
-    height: 40px;
+.modal-input {
+  width: 100%;
+  height: 40px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
 
-    padding-left: 42px;
-    padding-right: 42px;
-    background-color: transparent;
+  padding-left: 42px;
+  padding-right: 42px;
+  background-color: transparent;
 
-    transition: border-color 250ms var(--transition-effect);
+  transition: border-color 250ms var(--transition-effect);
 }
 
-.input-icon{
+.input-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1002,7 +996,7 @@ body {
 }
 
 .modal-input:focus + .input-icon,
-.modal-input:hover + .input-icon{
+.modal-input:hover + .input-icon {
   fill: var(--accent-color);
 }
 
@@ -1012,7 +1006,7 @@ body {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
-  border-radius: 4px;  
+  border-radius: 4px;
   outline: none;
   resize: none;
 
@@ -1049,7 +1043,7 @@ body {
   border: 2px solid #212121;
   margin-right: 8px;
   border-radius: 2px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1059,7 +1053,7 @@ body {
   fill: transparent;
 }
 
-.modal-field-icon{
+.modal-field-icon {
   transition: background-color 250ms var(--transition-effect), border 250ms var(--transition-effect);
 }
 
@@ -1068,7 +1062,7 @@ body {
   border: none;
 }
 
-.modal-chek-link{
+.modal-chek-link {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -1079,7 +1073,7 @@ body {
   text-decoration: underline;
 }
 
-.modal-title{
+.modal-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -1088,18 +1082,17 @@ body {
   color: var(--main-text-color);
 
   margin-bottom: 12px;
-
 }
 
-.modal-btn{
+.modal-btn {
   display: block;
   width: 200px;
   height: 50px;
-  
+
   margin: 0 auto;
 
-  border:none;
-  background: #2196F3;
+  border: none;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
