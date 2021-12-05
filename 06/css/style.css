@@ -622,6 +622,10 @@ body {
 
 /*---------------------------FOOTER----SOCIAL--------------------------------------*/
 
+.footer-social{
+  margin-right: 93px;
+}
+
 .footer-social-title {
   font-weight: 700;
   font-size: 14px;
@@ -667,6 +671,129 @@ body {
 .footer-social-icon {
   fill: currentColor;
 }
+
+
+/*--------------------------FOOTER-SUBMIT----------------------*/
+
+.footer-submit-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  margin-bottom: 20px;
+}
+
+.footer-submit-wrap{
+  display: flex;
+}
+
+.footer-submit-input{
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 12px;
+  background-color: transparent;
+
+  transition: border-color 250ms var(--transition-effect);
+
+  color: var(--third-text-color);
+}
+
+.footer-submit-input:hover,
+.footer-submit-input:focus{
+  border-color: var(--accent-color);
+}
+
+.footer-submit-input::placeholder{
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-submit-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 50px;
+
+  border: none;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: var(--third-text-color);
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+}
+
+.footer-submit-icon{
+  margin-left: 10px;
+  fill: currentColor;
+}
+  /*
+  .modal-input-wrap {
+    position: relative;
+  }
+  
+  .modal-input{
+      width: 100%;
+      height: 40px;
+  
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      box-sizing: border-box;
+      border-radius: 4px;
+      outline: none;
+  
+      padding-left: 42px;
+      padding-right: 42px;
+      background-color: transparent;
+  
+      transition: border-color 250ms var(--transition-effect);
+  }
+  
+  .input-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+  
+    transition: fill 250ms var(--transition-effect);
+  }
+  
+  .modal-input:focus,
+  .modal-input:hover,
+  .modal-text:hover,
+  .modal-text:focus {
+    border-color: var(--accent-color);
+  }
+  
+  .modal-input:focus + .input-icon,
+  .modal-input:hover + .input-icon{
+    fill: var(--accent-color);
+  }
+  
+*/  
+
 
 /*-----------------------------PORTFOLIO----------------------------*/
 /*-----------------------------PORTFOLIO----------------------------*/
@@ -830,6 +957,8 @@ body {
   left: 50%;
   transform: scale(1) rotate(0) translate(-50%, -50%);
   transition: transform 250ms var(--transition-effect);
+
+  padding: 40px;
 }
 
 .modal-close {
@@ -844,6 +973,188 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 250ms var(--transition-effect);
+}
+
+.modal-close:hover{
+  color: var(--accent-color);
+}
+
+.close-icon{
+  fill: currentColor;
+}
+
+.modal-form-field{
+  margin-bottom: 10px;
+}
+
+
+
+.modal-form-field:nth-child(4){
+  margin-bottom: 25px;
+}
+
+.modal-form-field:nth-child(5){
+  margin-bottom: 30px;
+}
+
+
+.modal-input-text{
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--second-text-color);
+
+  display: block;
+  margin-bottom: 4px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-input{
+    width: 100%;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+
+    padding-left: 42px;
+    padding-right: 42px;
+    background-color: transparent;
+
+    transition: border-color 250ms var(--transition-effect);
+}
+
+.input-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+
+  transition: fill 250ms var(--transition-effect);
+}
+
+.modal-input:focus,
+.modal-input:hover,
+.modal-text:hover,
+.modal-text:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus + .input-icon,
+.modal-input:hover + .input-icon{
+  fill: var(--accent-color);
+}
+
+.modal-text {
+  width: 100%;
+  height: 120px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;  
+  outline: none;
+  resize: none;
+
+  padding: 12px 16px;
+
+  background-color: transparent;
+
+  transition: border-color 250ms var(--transition-effect);
+}
+
+.modal-input::placeholder,
+.modal-text::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-check-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-check-text .modal-field-icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  margin-right: 8px;
+  border-radius: 2px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-check {
+  fill: transparent;
+}
+
+.modal-field-icon{
+  transition: background-color 250ms var(--transition-effect), border 250ms var(--transition-effect);
+}
+
+.modal-check:checked + .modal-check-text .modal-field-icon {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.modal-chek-link{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
+}
+
+.modal-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+
+  margin-bottom: 12px;
+
+}
+
+.modal-btn{
+  display: block;
+  width: 200px;
+  height: 50px;
+  
+  margin: 0 auto;
+
+  border:none;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: var(--third-text-color);
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
 .is-hidden {
