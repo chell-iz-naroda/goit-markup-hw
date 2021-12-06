@@ -550,6 +550,7 @@ body {
 .footer-container-position {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-item:not(:last-child) {
@@ -560,9 +561,6 @@ body {
   background-color: #2f303a;
 }
 
-.footer-main {
-  margin-right: 70px;
-}
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -620,11 +618,6 @@ body {
 }
 
 /*---------------------------FOOTER----SOCIAL--------------------------------------*/
-
-.footer-social {
-  margin-right: 93px;
-}
-
 .footer-social-title {
   font-weight: 700;
   font-size: 14px;
@@ -672,6 +665,7 @@ body {
 }
 
 /*--------------------------FOOTER-SUBMIT----------------------*/
+
 
 .footer-submit-title {
   font-weight: 700;
@@ -929,7 +923,8 @@ body {
   transition: color 250ms var(--transition-effect);
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   color: var(--accent-color);
 }
 
@@ -942,7 +937,7 @@ body {
 }
 
 .modal-form-field:nth-child(4) {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .modal-form-field:nth-child(5) {
@@ -1047,6 +1042,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: border-color 250ms var(--transition-effect);
+}
+
+.modal-check-text:hover .modal-field-icon,
+.modal-check:focus + .modal-check-text .modal-field-icon  {
+  border-color: var(--accent-color);
 }
 
 .icon-check {
@@ -1054,7 +1056,8 @@ body {
 }
 
 .modal-field-icon {
-  transition: background-color 250ms var(--transition-effect), border 250ms var(--transition-effect);
+  transition: background-color 250ms var(--transition-effect), border 250ms var(--transition-effect),
+    border-color 250ms var(--transition-effect);
 }
 
 .modal-check:checked + .modal-check-text .modal-field-icon {
